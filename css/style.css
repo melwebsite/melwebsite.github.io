@@ -1,0 +1,178 @@
+@font-face {
+    font-family: FoundersGrotesk;
+    src: url(fonts/FoundersGrotesk-Light.ttf);
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: FoundersGrotesk;
+    src: url(fonts/FoundersGrotesk-Regular.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Base */
+/* ------------------------------------------------------------------ */
+
+body {
+  font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  line-height: 1.15;
+  background-color: #ffffff;
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  color: #000000;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  height: 100%;
+  margin:0;
+  padding:0;
+  font-size: 18px;
+}
+
+ul {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+/* ------------------------------------------------------------------ */
+p {
+  font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 1.15;
+  /* text-transform: uppercase; */
+
+  padding: 0;
+  margin: 0;
+  float: left;
+  color: black;
+  text-decoration: none;
+}
+
+.gallery h1 {
+  font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 1.15;
+  /* text-transform: uppercase; */
+
+  padding: .5em 0 0 0;
+  margin: 0;
+  float: left;
+  color: black;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.gallery h1:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+/* ------------------------------------------------------------------ */
+nav {
+  background-color: #ffffff;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 5em;
+}
+
+nav a {
+  font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 5em;
+  text-transform: uppercase;
+
+  padding: 0 3em 0 0;
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#name {
+  font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  float: left;
+  padding: 0 0 0 3em;
+}
+
+/* Grid */
+/* ------------------------------------------------------------------ */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 1.5em;
+  grid-column-gap: 2em;
+  align-items: start;
+  justify-items: start;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 5em 3em 3em 3em;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+/* Etc */
+/* ------------------------------------------------------------------ */
+
+
+/* Media Queries */
+/* ------------------------------------------------------------------ */
+/* between 200 and 700 */
+@media (min-width: 200px) and (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+    padding: 4em 1.5em 1.5em 1.5em;
+  }
+
+  nav {
+    height: 4em;
+  }
+
+  nav a {
+    padding: 0 1.5em 0 0;
+    line-height: 4em;
+  }
+
+  #name {
+    padding: 0 0 0 1.5em;
+  }
+}
+
+/* between 700 and 1000 */
+@media (min-width: 701px) and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}
