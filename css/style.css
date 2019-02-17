@@ -65,19 +65,27 @@ p {
   font-weight: lighter;
   font-size: 1em;
   line-height: 1.15;
+  text-align: left;
   /* text-transform: uppercase; */
 
-  padding: .5em 0 0 0;
+  padding: 1em 0 0 0;
   margin: 0;
   float: left;
   color: black;
   text-decoration: none;
   outline: none;
   cursor: pointer;
+  opacity: 0;
+
+  transition:opacity 0.25s ease-in-out;
 }
 
 .gallery h1:hover {
   text-decoration: underline;
+}
+
+.gallery li:hover h1 {
+   opacity: 1;
 }
 
 /* Navigation */
@@ -135,6 +143,12 @@ nav a {
 
 .gallery img {
   width: 100%;
+}
+
+.gallery a {
+  line-height: 0;
+  display: block;
+  padding: 0;
 }
 
 /* Etc */
