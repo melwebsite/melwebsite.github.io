@@ -124,7 +124,7 @@ nav a {
   padding: 0 0 0 3em;
 }
 
-/* Grid */
+/* Grid - Index.html */
 /* ------------------------------------------------------------------ */
 
 .gallery {
@@ -151,9 +151,40 @@ nav a {
   padding: 0;
 }
 
+/* Grid - Individual Work page */
+/* ------------------------------------------------------------------ */
+.work {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-row-gap: 2em;
+  grid-column-gap: 1em;
+  align-items: start;
+  justify-items: start;
+
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 5em 3em 3em 3em;
+  /* line-height: 0; */
+}
+
+.image-column {
+  grid-column: 2/3;
+  display: inline-block;
+  line-height: 0;
+  width: 100%;
+}
+
+.image-column > img {
+  width: 100%;
+}
+
+.text-column {
+  grid-column: 1/2;
+}
+
 /* Etc */
 /* ------------------------------------------------------------------ */
-
 
 /* Media Queries */
 /* ------------------------------------------------------------------ */
