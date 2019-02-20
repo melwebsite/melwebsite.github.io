@@ -84,7 +84,7 @@ h2 {
 
 .text-column > p {
   line-height: 1.2;
-  padding: 0 0 1em 0;
+  padding: 0 1.5em 1em 0;
 }
 
 .gallery h1 {
@@ -134,7 +134,7 @@ nav a {
   line-height: 5em;
   text-transform: uppercase;
 
-  padding: 0 3em 0 0;
+  padding: 0 2.5em 0 0;
   float: right;
   display: block;
   color: black;
@@ -148,7 +148,7 @@ nav a {
   font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
   font-weight: bold;
   float: left;
-  padding: 0 0 0 3em;
+  padding: 0 0 0 2.5em;
 }
 
 /* Grid - Index.html */
@@ -165,7 +165,7 @@ nav a {
   box-sizing: border-box;
   width: 100%;
 
-  padding: 5em 3em 3em 3em;
+  padding: 5em 2.5em 3em 2.5em;
 }
 
 .gallery img {
@@ -191,7 +191,7 @@ nav a {
   box-sizing: border-box;
   width: 100%;
 
-  padding: 5em 3em 3em 3em;
+  padding: 5em 2.5em 3em 2.5em;
   /* line-height: 0; */
 }
 
