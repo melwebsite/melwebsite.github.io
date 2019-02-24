@@ -268,16 +268,8 @@ nav a:hover {
 }
 
 a.next {
-  padding: 0 2.5em 0 0;
   float: right;
-}
-
-a.next:before {
-  content:'Next ';
-}
-
-a.previous:after {
-  content:' Previous';
+  padding: 0 2.5em 0 0;
 }
 
 .footer a:hover {
@@ -371,15 +363,6 @@ a.previous:after {
   a.next {
     padding: 0 1.5em 0 0;
   }
-
-  a.next:before {
-    content: none;
-  }
-
-  a.previous:after {
-    content: none;
-  }
-
 }
 
 /* between 700 and 1000 */
