@@ -272,6 +272,14 @@ a.next {
   float: right;
 }
 
+a.next:before {
+  content:'Next ';
+}
+
+a.previous:after {
+  content:' Previous';
+}
+
 .footer a:hover {
   color: #8d8d8d;
 }
@@ -363,6 +371,15 @@ a.next {
   a.next {
     padding: 0 1.5em 0 0;
   }
+
+  a.next:before {
+    content: none;
+  }
+
+  a.previous:after {
+    content: none;
+  }
+
 }
 
 /* between 700 and 1000 */
