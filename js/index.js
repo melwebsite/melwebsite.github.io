@@ -1,3 +1,13 @@
+//collaspsible menu
+function menuFunction() {
+  var x = document.getElementById("nav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
 $(window).load(function () {
     $(window).on("scroll resize", function () {
         var pos = $('.text-column').offset();

@@ -160,6 +160,10 @@ nav a {
   padding: 0 0 0 2.5em;
 }
 
+#menu {
+  display: none;
+}
+
 /* Grid - Index.html */
 /* ------------------------------------------------------------------ */
 
@@ -283,17 +287,47 @@ nav a {
     margin: 0 0 1.5em 0;
   }
 
+  /* Navigation */
   nav {
     height: 4em;
+    transition: all .2s ease-in-out;
   }
 
   nav a {
     padding: 0 1.5em 0 0;
     line-height: 4em;
+    display: none;
+  }
+
+  .responsive {
+    height: 8em;
   }
 
   #name {
     padding: 0 0 0 1.5em;
+    display: block;
+    line-height: 4em;
+  }
+
+  #menu {
+    display: block;
+    float: none;
+    text-align: right;
+    padding: 0 1.5em 0 0;
+    line-height: 4em;
+  }
+
+  .responsive a {
+    display: block;
+    background-color: #ffffff;
+    float: none;
+    text-align: left;
+    padding: 0 0 0 1.5em;
+    line-height: 2em;
+  }
+
+  h2 {
+    line-height: 1.2;
   }
 }
 
