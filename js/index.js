@@ -8,21 +8,15 @@ $(window).load(function () {
                 //p
                 var newP = $(this).find('.description > p:first').text();
 
-                // var newDescr = $(this).find('.description').text();
-
               //find old description
                 var oldTitle = $( ".text-column > h2:first").html();
                 //p
                 var oldP = $( ".text-column > p:first").html();
 
-                // var oldDescr = $( ".text-column" ).html();
-
               //replace old with new
                 $('.text-column > h2:first').html(newTitle);
                 //p
                 $('.text-column > p:first').html(newP);
-
-                // $('.text-column').html(newDescr);
 
             // animation
                 // if(newDescr !== oldDescr) {
