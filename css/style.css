@@ -520,3 +520,10 @@ a.next {
     max-width: 100%;
   }
 }
+
+/* from 1500 */
+@media (min-width: 1900px) {
+  body {
+    font-size: 22px;
+  }
+}
