@@ -67,6 +67,10 @@ p {
   text-decoration: none;
 }
 
+em {
+  font-style: italic;
+}
+
 h2 {
   font-family: FoundersGrotesk, Helvetica, Arial, sans-serif;
   font-weight: bold;
@@ -282,9 +286,9 @@ a.next {
 
 /* Contact */
 /* ------------------------------------------------------------------ */
-.contact {
+.contact, .cv {
   width: 100%;
-  padding: 5em 2.5em 2.5em 2.5em;
+  padding: 5em 2.5em 1.5em 2.5em;
   box-sizing: border-box;
 }
 
@@ -314,6 +318,34 @@ a.next {
 
 .contact a:active {
   color: #8d8d8d;
+}
+
+/* CV */
+/* ------------------------------------------------------------------ */
+.cv-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 1em 0;
+}
+
+.cv-container li {
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.cv-container li:nth-child(odd) {
+  flex: 10%;
+}
+
+.cv-container li:nth-child(even) {
+  flex: 90%;
+}
+
+.cv p {
+  margin: 0 0 1em 0;
+  line-height: 1.2;
 }
 
 /* Etc */
@@ -375,8 +407,12 @@ a.next {
   }
 
   nav a {
-    padding: 0 1.5em 0 0;
+    padding: 0 1em 0 0;
     line-height: 4em;
+  }
+
+  nav a:last-child) {
+    padding: 0 1.5em 0 0;
   }
 
   .name {
@@ -387,6 +423,8 @@ a.next {
   h2 {
     line-height: 1.2;
   }
+
+  /* Footer */
 
   .footer {
     background-color: #ffffff;
@@ -402,6 +440,35 @@ a.next {
 
   a.next {
     padding: 0 1.5em 0 0;
+  }
+
+  /* Contact */
+  .contact, .cv {
+    width: 100%;
+    padding: 4em 1.5em .5em 1.5em;
+    box-sizing: border-box;
+  }
+
+  /* CV */
+  .cv-container li:nth-child(odd) {
+    flex: 100%;
+    padding-top: 1em;
+  }
+
+  .cv-container li:nth-child(even) {
+    flex: 100%;
+  }
+
+  .cv > h2 {
+    padding-bottom: 0;
+  }
+
+  .cv > p {
+    margin: 1em 0 1em 0;
+  }
+
+  .cv > p:first-child {
+    margin: 0 0 1em 0;
   }
 }
 
