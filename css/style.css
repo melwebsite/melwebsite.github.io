@@ -241,6 +241,11 @@ nav a:active {
   margin: 0;
 }
 
+.vertical {
+  max-width: 70%;
+  float: right;
+}
+
 .text-column {
   grid-column: 1/2;
   position: sticky;
@@ -401,6 +406,10 @@ a.next {
     margin: 0 0 1.5em 0;
   }
 
+  .vertical {
+    max-width: 100%;
+  }
+
   /* Navigation */
   nav {
     height: 4em;
@@ -505,5 +514,9 @@ a.next {
 
   .text-column > p:last-child {
     padding: 0;
+  }
+
+  .vertical {
+    max-width: 100%;
   }
 }
