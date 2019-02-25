@@ -450,7 +450,7 @@ a.next {
     line-height: 4em;
   }
 
-  nav a:last-child {
+  nav li:nth-child(2) > a {
     padding: 0 1.5em 0 0;
   }
 
