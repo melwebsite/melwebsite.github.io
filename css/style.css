@@ -1,20 +1,20 @@
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGrotesk-Light.ttf);
+    src: url(fonts/FoundersGroteskWeb-Light.woff);
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGrotesk-Regular.ttf);
+    src: url(fonts/FoundersGroteskWeb-Regular.woff);
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGrotesk-LightItalic.ttf);
+    src: url(fonts/FoundersGroteskWeb-LightItalic.woff);
     font-weight: lighter;
     font-style: italic;
 }
@@ -76,7 +76,7 @@ h2 {
   font-weight: bold;
   /* font-style: italic; */
   font-size: 1em;
-  line-height: 1.15;
+  line-height: 1;
   /* text-transform: uppercase; */
 
   padding: 0 0 1em 0;
@@ -181,8 +181,8 @@ nav a:active {
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 1.5em;
-  grid-column-gap: 2em;
+  grid-row-gap: 2.5em;
+  grid-column-gap: 2.5em;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -204,6 +204,13 @@ nav a:active {
   line-height: 0;
   display: block;
   padding: 0;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  backface-visibility: hidden;
+}
+
+.gallery a:hover {
+  opacity: 0.9;
 }
 
 /* Grid - Individual Work page */
@@ -399,7 +406,7 @@ a.next {
 @media (min-width: 200px) and (max-width: 700px) {
   .gallery {
     grid-template-columns: 1fr;
-    grid-row-gap: 1em;
+    grid-row-gap: 1.5em;
     padding: 4em 1.5em 1.5em 1.5em;
   }
 
@@ -460,7 +467,7 @@ a.next {
   }
 
   h2 {
-    line-height: 1.2;
+    line-height: 1;
   }
 
   /* Footer */
