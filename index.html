@@ -8,9 +8,9 @@
 
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- <link href="css/pace_minimal.css" rel="stylesheet" /> -->
+  <link href="css/pace_minimal.css" rel="stylesheet" />
 
-  <!-- <script src="js/pace.js"></script> -->
+  <script src="js/pace.js"></script>
   <script src="js/jquery.min.js"></script>
 
   <meta name="description" content="Born in 1975, Sydney, Australia. She lives and works in Paris, France.">
@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <!-- NAVIGATION -->
   <nav class="nav" id="nav">
     <ul>
       <li><a class="name" href="index.html">Mel O'Callaghan</a></li>
@@ -26,25 +27,93 @@
       <li><a href="cv.html">CV</a></li>
     </ul>
   </nav>
-
+  <!-- IMAGES AND LINKS -->
   <ul class="gallery">
-    <li><a href="works/primary-secondary-score.html"><img src="assets/thumbnails/primary_secondary_score.jpg" alt="Primary/Secondary Score, Carriageworks, Sydney"></a></li>
-    <li><a href="works/respire-respire.html"><img src="assets/thumbnails/respire_respire.jpg" alt="Respire, respire, 2018, Labanque, Bethune"></a></li>
-    <li><a href="works/dangerous-on-the-way.html"><img src="assets/thumbnails/dangerous_on_the_way.jpg" alt="Dangerous on the Way, Palais de Tokyo, Paris, France"></a></li>
-    <li><a href="works/going-over-going-under.html"><img src="assets/thumbnails/going_over_going_under.jpg" alt="Going Over, Going Under, 2016, Nuit Blanche, Paris, France"></a></li>
-    <li><a href="works/en-masse.html"><img src="assets/thumbnails/en_masse.jpg" alt="En Masse, 2016, Galerie Allen, Paris"></a></li>
-    <li><a href="works/ensemble-ngv.html"><img src="assets/thumbnails/ensemble_ngv.jpg" alt="Ensemble, 2018, NGV National Gallery of Victoria, Melbourne"></a></li>
-    <li><a href="works/ensemble-serralves.html"><img src="assets/thumbnails/ensemble_serralves.jpg" alt="Ensemble, Serralves Museum, Porto, Portugal"></a></li>
-    <li><a href="works/ensemble-pompidou-paris.html"><img src="assets/thumbnails/ensemble_pompidou_paris.jpg" alt="Ensemble, Centre Pompidou, Paris, France"></a></li>
-    <li><a href="works/parade.html"><img src="assets/thumbnails/parade_tokyo.jpg" alt="Parade, 2016, Do Distrub, Palais de Tokyo, Paris, France"></a></li>
-    <li><a href="works/ensemble-pompidou-malaga.html"><img src="assets/thumbnails/ensemble_pompidou_malaga.jpg" alt="Ensemble, Centre Pompidou Malaga, Spain"></a></li>
-    <li><a href="works/ensemble-villeurbanne.html"><img src="assets/thumbnails/ensemble_villeurbanne.jpg" alt="Ensemble, Institut d’art contemporain, Villeurbanne, France"></a></li>
-    <li><a href="works/lacte-gratuit.html"><img src="assets/thumbnails/lacte_gratuit.jpg" alt="L'Act Gratuit, 2014"></a></li>
-    <li><a href="works/dangerous-looking-back.html"><img src="assets/thumbnails/dangerous_looking_back.jpg" alt="Dangerous Looking-Back, 2015"></a></li>
-    <li><a href="works/endgame.html"><img src="assets/thumbnails/endgame.jpg" alt="Endgame, 2012"></a></li>
-    <li><a href="works/endgame-performance.html"><img src="assets/thumbnails/endgame_acca_performance.jpg" alt="Endgame, 2012"></a></li>
-    <li><a href="works/to-the-end.html"><img src="assets/thumbnails/to_the_end.jpg" alt="To The End, 2007"></a></li>
-    <!-- <li><a href="index.html"><img src="assets/thumbnails/.jpg" alt=""></a></li> -->
+    <li><a href="works/primary-secondary-score.html">
+      <img class="lazy" src="assets/small/thumbnails/primary_secondary_score.jpg"
+      data-src="assets/thumbnails/primary_secondary_score.jpg" data-srcset=""
+      alt="Primary/Secondary Score, Carriageworks, Sydney">
+    </a></li>
+    <li><a href="works/respire-respire.html">
+      <img class="lazy" src="assets/small/thumbnails/respire_respire.jpg"
+      data-src="assets/thumbnails/respire_respire.jpg" data-srcset=""
+      alt="Respire, respire, 2018, Labanque, Bethune">
+    </a></li>
+    <li><a href="works/dangerous-on-the-way.html">
+      <img class="lazy" src="assets/small/thumbnails/dangerous_on_the_way.jpg"
+      data-src="assets/thumbnails/dangerous_on_the_way.jpg" data-srcset=""
+      alt="Dangerous on the Way, Palais de Tokyo, Paris, France">
+    </a></li>
+    <li><a href="works/going-over-going-under.html">
+      <img class="lazy" src="assets/small/thumbnails/going_over_going_under.jpg"
+      data-src="assets/thumbnails/going_over_going_under.jpg" data-srcset=""
+      alt="Going Over, Going Under, 2016, Nuit Blanche, Paris, France">
+    </a></li>
+    <li><a href="works/en-masse.html">
+      <img class="lazy" src="assets/small/thumbnails/en_masse.jpg"
+      data-src="assets/thumbnails/en_masse.jpg" data-srcset=""
+      alt="En Masse, 2016, Galerie Allen, Paris">
+    </a></li>
+    <li><a href="works/ensemble-ngv.html">
+      <img class="lazy" src="assets/small/thumbnails/ensemble_ngv.jpg"
+      data-src="assets/thumbnails/ensemble_ngv.jpg" data-srcset=""
+      alt="Ensemble, 2018, NGV National Gallery of Victoria, Melbourne">
+    </a></li>
+    <li><a href="works/ensemble-serralves.html">
+      <img class="lazy" src="assets/small/thumbnails/ensemble_serralves.jpg"
+      data-src="assets/thumbnails/ensemble_serralves.jpg" data-srcset=""
+      alt="Ensemble, Serralves Museum, Porto, Portugal">
+    </a></li>
+    <li><a href="works/ensemble-pompidou-paris.html">
+      <img class="lazy" src="assets/small/thumbnails/ensemble_pompidou_paris.jpg"
+      data-src="assets/thumbnails/ensemble_pompidou_paris.jpg" data-srcset=""
+      alt="Ensemble, Centre Pompidou, Paris, France">
+    </a></li>
+    <li><a href="works/parade.html">
+      <img class="lazy" src="assets/small/thumbnails/parade_tokyo.jpg"
+      data-src="assets/thumbnails/parade_tokyo.jpg" data-srcset=""
+      alt="Parade, 2016, Do Distrub, Palais de Tokyo, Paris, France">
+    </a></li>
+    <li><a href="works/ensemble-pompidou-malaga.html">
+      <img class="lazy" src="assets/small/thumbnails/ensemble_pompidou_malaga.jpg"
+      data-src="assets/thumbnails/ensemble_pompidou_malaga.jpg" data-srcset=""
+      alt="Ensemble, Centre Pompidou Malaga, Spain">
+    </a></li>
+    <li><a href="works/ensemble-villeurbanne.html">
+      <img class="lazy" src="assets/small/thumbnails/ensemble_villeurbanne.jpg"
+      data-src="assets/thumbnails/ensemble_villeurbanne.jpg" data-srcset=""
+      alt="Ensemble, Institut d’art contemporain, Villeurbanne, France">
+    </a></li>
+    <li><a href="works/lacte-gratuit.html">
+      <img class="lazy" src="assets/small/thumbnails/lacte_gratuit.jpg"
+      data-src="assets/thumbnails/lacte_gratuit.jpg" data-srcset=""
+      alt="L'Act Gratuit, 2014">
+    </a></li>
+    <li><a href="works/dangerous-looking-back.html">
+      <img class="lazy" src="assets/small/thumbnails/dangerous_looking_back.jpg"
+      data-src="assets/thumbnails/dangerous_looking_back.jpg" data-srcset=""
+      alt="Dangerous Looking-Back, 2015">
+    </a></li>
+    <li><a href="works/endgame.html">
+      <img class="lazy" src="assets/small/thumbnails/endgame.jpg"
+      data-src="assets/thumbnails/endgame.jpg" data-srcset=""
+      alt="Endgame, 2012">
+    </a></li>
+    <li><a href="works/endgame-performance.html">
+      <img class="lazy" src="assets/small/thumbnails/endgame_acca_performance.jpg"
+      data-src="assets/thumbnails/endgame_acca_performance.jpg" data-srcset=""
+      alt="Endgame, 2012">
+    </a></li>
+    <li><a href="works/to-the-end.html">
+      <img class="lazy" src="assets/small/thumbnails/to_the_end.jpg"
+      data-src="assets/thumbnails/to_the_end.jpg" data-srcset=""
+      alt="To The End, 2007">
+    </a></li>
+    <!-- <li><a href="index.html">
+      <img class="lazy" src="assets/small/thumbnails/.jpg"
+      data-src="assets/thumbnails/.jpg" data-srcset=""
+      alt="">
+    </a></li> -->
   </ul>
 
   <script src="js/index.js"></script>
