@@ -445,35 +445,9 @@ a.next {
 /* Media Queries */
 /* ------------------------------------------------------------------ */
 /* between 200 and 350 */
-@media (max-width: 365px) {
+@media (max-width: 350px) {
   nav a {
     text-transform: none;
-  }
-}
-
-/* between 200 and 500 */
-@media (min-width: 200px) and (max-width: 500px) {
-  /* Navigation */
-  nav {
-    height: 4em;
-  }
-
-  nav ul {
-    padding: 0 1.5em 0 1.5em;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  nav a {
-    padding: 0;
-    line-height: 4em;
-  }
-
-  .name {
-    padding: 0;
-    line-height: 4em;
   }
 }
 
@@ -540,13 +514,31 @@ a.next {
   }
 
   /* Navigation */
-
   nav {
     height: 4em;
   }
 
+  nav ul {
+    padding: 0 1.5em 0 1.5em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   nav a {
-    padding: 0 0 0 1.5em;
+    /* padding: 0 1em 0 0; */
+    padding: 0;
+    line-height: 4em;
+  }
+
+  nav li:nth-child(2) > a {
+    /* padding: 0 1.5em 0 0; */
+  }
+
+  .name {
+    /* padding: 0 0 0 1.5em; */
+    padding: 0;
     line-height: 4em;
   }
 
