@@ -1,20 +1,29 @@
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGroteskWeb-Light.woff);
+    src: url('fonts/FoundersGroteskWeb-Light.eot');
+    src: url('fonts/FoundersGroteskWeb-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/FoundersGroteskWeb-Light.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/FoundersGroteskWeb-Light.woff') format('woff'); /* Pretty Modern Browsers */
     font-weight: lighter;
     font-style: normal;
 }
 
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGroteskWeb-Regular.woff);
+    src: url('fonts/FoundersGroteskWeb-Regular.eot');
+    src: url('fonts/FoundersGroteskWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/FoundersGroteskWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/FoundersGroteskWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: FoundersGrotesk;
-    src: url(fonts/FoundersGroteskWeb-LightItalic.woff);
+    src: url('fonts/FoundersGroteskWeb-LightItalic.eot');
+    src: url('fonts/FoundersGroteskWeb-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('fonts/FoundersGroteskWeb-LightItalic.woff2') format('woff2'), /* Super Modern Browsers */
+      url('fonts/FoundersGroteskWeb-LightItalic.woff') format('woff'); /* Pretty Modern Browsers */
     font-weight: lighter;
     font-style: italic;
 }
@@ -138,6 +147,11 @@ em {
 
 .description > p {
   white-space: pre-line;
+}
+
+::selection {
+  background-color: #b7b7b7;
+  color: #000;
 }
 
 /* Navigation */
