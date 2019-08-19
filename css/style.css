@@ -243,6 +243,7 @@ nav .icon {
 .name {
   font-family: Avenir Next, Helvetica, Arial, sans-serif;
   font-weight: bold;
+  letter-spacing: 0.025em;
 }
 
 /* Grid - Index.html */
@@ -449,8 +450,19 @@ a.next {
 }
 
 .cv p {
+  font-size: 1em;
+  line-height: 1.15;
   margin: 0 0 1em 0;
   line-height: 1.2;
+}
+
+.cv > h2 {
+  font-family: Avenir Next, Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 1.15;
+  text-transform: uppercase;
+  padding-bottom: 1em;
 }
 
 .cv a {
