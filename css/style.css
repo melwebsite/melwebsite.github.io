@@ -327,6 +327,25 @@ nav .icon {
   float: right;
 }
 
+/* Videos */
+/* ------------------------------------------------------------------ */
+
+.video-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin: 0 0 2.5em 0;
+}
+
+.video-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 /* Footer for work page */
 /* ------------------------------------------------------------------ */
 .footer {
@@ -529,6 +548,10 @@ a.next {
 
   p.credit:last-of-type {
     padding: 0 1.5em 0 0;
+  }
+
+  .video-responsive{
+    margin: 0 0 1.5em 0;
   }
 
   @supports (display: grid) {
