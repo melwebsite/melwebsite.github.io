@@ -21,3 +21,21 @@ document.addEventListener("DOMContentLoaded", function() {
     // Possibly fall back to a more compatible method here
   }
 });
+
+//responsive collapsible menu
+document.getElementById("icon").addEventListener("click", function(){
+  var x = document.getElementById("nav");
+  var y = document.getElementById("icon");
+  //toggle menu visibility
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+  //toggle button text
+  if (y.innerHTML === "Menu") {
+    y.innerHTML = "&#10005;";
+  } else {
+    y.innerHTML = "Menu";
+  }
+});
