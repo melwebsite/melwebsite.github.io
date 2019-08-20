@@ -29,13 +29,9 @@ document.getElementById("icon").addEventListener("click", function(){
   //toggle menu visibility
   if (x.className === "nav") {
     x.className += " responsive";
+    y.className += " open";
   } else {
     x.className = "nav";
-  }
-  //toggle button text
-  if (y.innerHTML === "Menu") {
-    y.innerHTML = "&#10005;";
-  } else {
-    y.innerHTML = "Menu";
+    y.className = "icon";
   }
 });
