@@ -538,7 +538,7 @@ a.next {
   }
 
   #icon span:nth-child(2) {
-    top: 2rem;
+    top: 1.975rem;
   }
 
   #icon span:nth-child(3) {
@@ -546,7 +546,7 @@ a.next {
   }
 
   #icon.open span:nth-child(1) {
-    top: 2rem;
+    top: 1.975rem;
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -o-transform: rotate(135deg);
@@ -558,7 +558,7 @@ a.next {
   }
 
   #icon.open span:nth-child(3) {
-    top: 2rem;
+    top: 1.975rem;
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
